@@ -1,0 +1,17 @@
+list = [0, 1, 2, 0, 1, 1, 2, 0, 1, 1, 2]
+
+def sorted(list):
+    i = 0
+    while i < len(list()):
+        if list[i:].count(0) + list[i:].count(1) == 0:
+            return list
+        if list[i] == 2:
+            list.append(list.pop(i))
+            continue
+        elif list[i] == 0:
+            list.insert(0, list.pop(i))
+        i += 1
+    
+    return list
+
+print(sorted(list))
